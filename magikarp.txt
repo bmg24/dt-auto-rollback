@@ -1,0 +1,7 @@
+helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -f values.yaml --atomic --create-namespace --namespace dynatrace
+
+
+helm install dynatrace-oneagent-operator . \
+  --set "installCRD=true" \
+  --atomic \
+  --create-namespace --namespace dynatrace
